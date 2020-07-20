@@ -7,7 +7,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "lint": "eslint . --ext .json --ext .js",
+    "lint": "eslint",
     "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,yml}\"",
     "test": "npm run lint"
   },
