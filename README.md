@@ -6,14 +6,14 @@ This is my first hosted portfolio. After months of exploring reasons, building g
 
 ### Running locally
 
-### Built with :love: using
+### Built with :heart: using
 
 -   [Next.js](https://nextjs.org/)
 -   [Vercel](https://vercel.com/)
 -   [MDX](https://mdxjs.com/)
 -   [Chakra UI](https://chakra-ui.com/)
 
-### Thank you for the inspiration
+### Thank you :pray: for the inspiration
 
 -   [Lee Robinson](https://leerob.io/)
 -   [Kent C. Dodds](https://kentcdodds.com/)
