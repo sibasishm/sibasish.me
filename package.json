@@ -1,0 +1,63 @@
+{
+  "name": "sibasish.me",
+  "version": "1.0.0",
+  "description": "My personal portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "eslint . --ext .json --ext .js",
+    "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,yml}\"",
+    "test": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,js,json,md,mdx,yml}": [
+      "npm run prettier",
+      "npm run lint"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sibasishm/sibasish.me.git"
+  },
+  "keywords": [
+    "sibasish",
+    "portfolio",
+    "blog",
+    "nextjs",
+    "mdx",
+    "chakra-ui"
+  ],
+  "author": {
+    "name": "Sibasish Mohanty",
+    "email": "sibasish.business@gmail.com",
+    "url": "https://sibasish.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sibasishm/sibasish.me/issues"
+  },
+  "homepage": "https://github.com/sibasishm/sibasish.me#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-get-off-my-lawn": "^5.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
