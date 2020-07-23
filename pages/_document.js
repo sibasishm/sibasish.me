@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/static/fonts/Jost-roman.var-latin.woff"
+            href="/static/fonts/Jost-roman.var-latin.woff2"
             as="font"
             type="font/ttf"
             crossOrigin="true"

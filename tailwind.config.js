@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Jost', ...defaultTheme.fontFamily.sans]
+      sans: ['Jost var', ...defaultTheme.fontFamily.sans]
     },
     colors: {
       primary: 'var(--color-primary)',
@@ -20,22 +20,22 @@ module.exports = {
       addBase([
         {
           '@font-face': {
-            fontFamily: 'Jost',
+            fontFamily: 'Jost var',
             fontWeight: '100 900',
             fontStyle: 'normal',
             fontNamedInstance: 'Regular',
             fontDisplay: 'swap',
-            src: 'url("/static/fonts/Jost-roman.var-latin.woff") format("woff")'
+            src: 'url("/static/fonts/Jost-roman.var-latin.woff2") format("woff2")'
           }
         },
         {
           '@font-face': {
-            fontFamily: 'Jost',
+            fontFamily: 'Jost var',
             fontWeight: '100 900',
             fontStyle: 'italic',
             fontNamedInstance: 'Italic',
             fontDisplay: 'swap',
-            src: 'url("/static/fonts/Jost-italic.var-latin.woff") format("woff")'
+            src: 'url("/static/fonts/Jost-italic.var-latin.woff2") format("woff2")'
           }
         }
       ]);

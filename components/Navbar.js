@@ -10,11 +10,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
       </Link>
       <button
         className="flex items-center p-2 hover:shadow focus:outline-none focus:shadow-outline rounded"
-        onClick={() =>
-          handleThemeChange(
-            theme === 'theme-light' ? 'theme-dark' : 'theme-light'
-          )
-        }
+        onClick={() => handleThemeChange(theme === 'theme-light' ? 'theme-dark' : 'theme-light')}
         type="button"
       >
         <SVGProvider name={theme === 'theme-light' ? 'sun' : 'moon'} />
