@@ -17,8 +17,10 @@ const Navbar = ({ theme, handleThemeChange }) => {
         }
         type="button"
       >
-        <SVGProvider />
-        <span className="hidden md:inline ml-2">Dark Mode</span>
+        <SVGProvider name={theme === 'theme-light' ? 'sun' : 'moon'} />
+        <span className="hidden md:inline ml-2">{`${
+          theme === 'theme-light' ? 'Light' : 'Dark'
+        } Mode`}</span>
       </button>
     </nav>
   );
