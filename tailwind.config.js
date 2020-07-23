@@ -1,9 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: [],
   theme: {
     extend: {},
     fontFamily: {
-      body: ['Rubik', 'Arial', 'sans-serif']
+      sans: ['Jost', ...defaultTheme.fontFamily.sans]
     },
     colors: {
       primary: 'var(--color-primary)',
@@ -13,5 +15,30 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: []
+  plugins: [
+    ({ addBase }) => {
+      addBase([
+        {
+          '@font-face': {
+            fontFamily: 'Jost',
+            fontWeight: '100 900',
+            fontStyle: 'normal',
+            fontNamedInstance: 'Regular',
+            fontDisplay: 'swap',
+            src: 'url("/static/fonts/Jost-roman.var-latin.woff") format("woff")'
+          }
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Jost',
+            fontWeight: '100 900',
+            fontStyle: 'italic',
+            fontNamedInstance: 'Italic',
+            fontDisplay: 'swap',
+            src: 'url("/static/fonts/Jost-italic.var-latin.woff") format("woff")'
+          }
+        }
+      ]);
+    }
+  ]
 };

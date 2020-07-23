@@ -1,12 +1,17 @@
-import Document, { Head, Main, NextScript } from 'next/document';
-import GoogleFonts from 'next-google-fonts';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
     return (
-      <html lang="en">
-        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" />
+      <Html lang="en">
         <Head>
+          <link
+            rel="preload"
+            href="/static/fonts/Jost-roman.var-latin.woff"
+            as="font"
+            type="font/ttf"
+            crossOrigin="true"
+          />
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
           <meta content="#ffffff" name="theme-color" />
@@ -34,7 +39,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
