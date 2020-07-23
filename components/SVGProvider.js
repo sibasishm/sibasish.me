@@ -1,6 +1,6 @@
 const SVGProvider = () => (
   <svg
-    className="fill-current h-4 w-4"
+    className="fill-current h-5 w-5"
     fill="none"
     strokeLinecap="round"
     strokeLinejoin="round"

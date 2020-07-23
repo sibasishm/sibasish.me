@@ -10,6 +10,7 @@ const DEFAULT_THEME = 'theme-light';
 const Layout = ({ children, title }) => {
   if (typeof window === 'undefined') return null;
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [theme, setTheme] = useTheme(DEFAULT_THEME, 'theme');
 
   const handleThemeChange = (newTheme) => {

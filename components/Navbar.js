@@ -18,7 +18,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
         type="button"
       >
         <SVGProvider />
-        <span className="hidden md:inline">Dark Mode</span>
+        <span className="hidden md:inline ml-2">Dark Mode</span>
       </button>
     </nav>
   );
