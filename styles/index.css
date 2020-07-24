@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-light {
+  --color-primary: #f7fafc;
+  --color-secondary: #ffffff;
+  --color-ternary: #cbd5e0;
+  --color-quaternary: #1a202c;
+}
+
+.theme-dark {
+  --color-primary: #0d2438;
+  --color-secondary: #102c44;
+  --color-ternary: #1e3951;
+  --color-quaternary: #fafafa;
+}
