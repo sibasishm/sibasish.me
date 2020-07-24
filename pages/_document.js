@@ -15,6 +15,7 @@ class MyDocument extends Document {
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
           <meta content="#ffffff" name="theme-color" />
+          {/* Replace with theme color */}
           <meta content="#ffffff" name="msapplication-TileColor" />
           <link
             rel="apple-touch-icon"
