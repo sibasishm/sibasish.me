@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 .theme-light {
-  --color-primary: #f7fafc;
-  --color-secondary: #ffffff;
-  --color-ternary: #cbd5e0;
-  --color-quaternary: #1a202c;
+  --color-primary: #ffffff;
+  --color-secondary: #f7fafc;
+  --color-ternary: #718096;
+  --color-hover: #cbd5e0;
+  --color-text: #121822;
 }
 
 .theme-dark {
-  --color-primary: #0d2438;
-  --color-secondary: #102c44;
-  --color-ternary: #1e3951;
-  --color-quaternary: #fafafa;
+  --color-primary: #102c44;
+  --color-secondary: #0d2438;
+  --color-ternary: #b0b0b0;
+  --color-hover: #6363a3;
+  --color-text: #fafafa;
 }
