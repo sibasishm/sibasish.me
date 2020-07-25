@@ -22,9 +22,11 @@ const Layout = ({ children, title }) => {
       <Head>
         <title>{title || 'Home'}</title>
       </Head>
-      <div className={`${theme} min-h-screen antialiased font-sans text-quaternary bg-primary`}>
-        <Navbar theme={theme} handleThemeChange={handleThemeChange} />
-        {children}
+      <div className={`${theme} min-h-screen antialiased font-sans text-text bg-secondary`}>
+        <header className="bg-primary border-b-2 border-hover">
+          <Navbar theme={theme} handleThemeChange={handleThemeChange} />
+        </header>
+        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-6xl">{children}</main>
       </div>
     </>
   );

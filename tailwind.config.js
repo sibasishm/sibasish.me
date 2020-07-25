@@ -11,7 +11,8 @@ module.exports = {
       primary: 'var(--color-primary)',
       secondary: 'var(--color-secondary)',
       ternary: 'var(--color-ternary)',
-      quaternary: 'var(--color-quaternary)'
+      text: 'var(--color-text)',
+      hover: 'var(--color-hover)'
     }
   },
   variants: {},

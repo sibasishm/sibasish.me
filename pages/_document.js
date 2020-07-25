@@ -14,8 +14,6 @@ class MyDocument extends Document {
           />
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <meta content="#ffffff" name="theme-color" />
-          <meta content="#ffffff" name="msapplication-TileColor" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -34,6 +32,9 @@ class MyDocument extends Document {
             href="/static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
+          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#0f141e" />
+          <meta name="msapplication-TileColor" content="#ffc40d" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>
           <Main />
