@@ -21,14 +21,14 @@ const Index = () => {
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div>
             <Link href="/works">
-              <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent rounded-md shadow text-base font-medium tracking-wide capitalize text-primary bg-accent-primary hover:bg-accent-secondary focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
+              <a className="w-full flex items-center justify-center px-8 py-3 rounded-md shadow text-base font-medium tracking-wide capitalize text-primary bg-accent-primary hover:bg-accent-secondary focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
                 View projects
               </a>
             </Link>
           </div>
-          <div className="mt-3 sm:mt-0 sm:ml-3">
+          <div className="mt-3 sm:mt-0 sm:ml-4">
             <Link href="/about">
-              <a className=" w-full flex items-center justify-center px-8 py-3 border border-transparent rounded-md shadow text-base font-medium tracking-wide capitalize bg-hover hover:bg-accent-secondary focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
+              <a className=" w-full flex items-center justify-center px-8 py-3 rounded-md shadow text-base font-medium tracking-wide capitalize bg-hover hover:bg-accent-secondary focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
                 Read about me
               </a>
             </Link>
