@@ -12,7 +12,9 @@ module.exports = {
       secondary: 'var(--color-secondary)',
       ternary: 'var(--color-ternary)',
       text: 'var(--color-text)',
-      hover: 'var(--color-hover)'
+      hover: 'var(--color-hover)',
+      'accent-primary': 'var(--color-accent-primary)',
+      'accent-secondary': 'var(--color-accent-secondary)'
     }
   },
   variants: {},

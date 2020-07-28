@@ -26,7 +26,9 @@ const Layout = ({ children, title }) => {
         <header className="bg-primary border-b-2 border-hover">
           <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         </header>
-        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-6xl">{children}</main>
+        <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-screen-xl">
+          {children}
+        </main>
       </div>
     </>
   );

@@ -8,6 +8,8 @@
   --color-ternary: #718096;
   --color-hover: #cbd5e0;
   --color-text: #121822;
+  --color-accent-primary: #374ec7;
+  --color-accent-secondary: #5671fe;
 }
 
 .theme-dark {
@@ -16,4 +18,6 @@
   --color-ternary: #b0b0b0;
   --color-hover: #6363a3;
   --color-text: #fafafa;
+  --color-accent-primary: #374ec7;
+  --color-accent-secondary: #5671fe;
 }
