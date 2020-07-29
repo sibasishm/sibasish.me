@@ -22,8 +22,8 @@ const Layout = ({ children, title }) => {
       <Head>
         <title>{title || 'Home'}</title>
       </Head>
-      <div className={`${theme} min-h-screen antialiased font-sans text-text bg-secondary`}>
-        <header className="bg-primary border-b-2 border-hover">
+      <div className={`${theme} min-h-screen antialiased font-sans text-text bg-background`}>
+        <header className="bg-background-offset border-b-2 border-border">
           <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         </header>
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-screen-xl">

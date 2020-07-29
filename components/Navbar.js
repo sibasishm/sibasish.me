@@ -68,7 +68,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
           <div className="hidden md:flex md:ml-4">
             {links.map(({ name, href }) => (
               <Link key={name} href={href}>
-                <a className="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-ternary hover:text-text hover:bg-secondary focus:outline-none focus:text-text focus:bg-secondary transition duration-150 ease-in-out">
+                <a className="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-text-offset hover:text-text hover:bg-background focus:outline-none focus:text-text focus:bg-background transition duration-150 ease-in-out">
                   {name}
                 </a>
               </Link>
@@ -90,7 +90,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
       <div className={`p-2 pb-3 md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         {links.map(({ name, href }) => (
           <Link key={name} href={href}>
-            <a className="block mt-1 px-3 py-2 rounded-md font-medium leading-5 text-ternary hover:text-text hover:bg-secondary focus:outline-none focus:text-text focus:bg-secondary transition duration-150 ease-in-out">
+            <a className="block mt-1 px-3 py-2 rounded-md font-medium leading-5 text-text-offset hover:text-text hover:bg-background focus:outline-none focus:text-text focus:bg-background transition duration-150 ease-in-out">
               {name}
             </a>
           </Link>
