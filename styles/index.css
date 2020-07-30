@@ -3,17 +3,21 @@
 @tailwind utilities;
 
 .theme-light {
-  --color-primary: #ffffff;
-  --color-secondary: #f7fafc;
-  --color-ternary: #718096;
-  --color-hover: #cbd5e0;
-  --color-text: #121822;
+  --color-background: #f6f8fa;
+  --color-background-offset: #fffdfb;
+  --color-text: #1b2d45;
+  --color-text-offset: #34445f;
+  --color-border: #d1dae7;
+  --color-primary: #374ec7;
+  --color-primary-offset: #5267d1;
 }
 
 .theme-dark {
-  --color-primary: #102c44;
-  --color-secondary: #0d2438;
-  --color-ternary: #b0b0b0;
-  --color-hover: #6363a3;
-  --color-text: #fafafa;
+  --color-background: #102c44;
+  --color-background-offset: #0d2438;
+  --color-text: #fefffe;
+  --color-text-offset: #94a1b2;
+  --color-border: #535161;
+  --color-primary: #badb42;
+  --color-primary-offset: #cbe864;
 }

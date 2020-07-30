@@ -40,7 +40,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+    <nav className="max-w-5xl xl:max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
       <div className="relative flex justify-between items-center h-16">
         <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
           <button
@@ -68,7 +68,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
           <div className="hidden md:flex md:ml-4">
             {links.map(({ name, href }) => (
               <Link key={name} href={href}>
-                <a className="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-ternary hover:text-text hover:bg-secondary focus:outline-none focus:text-text focus:bg-secondary transition duration-150 ease-in-out">
+                <a className="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-text-offset hover:text-text hover:bg-background focus:outline-none focus:text-text focus:bg-background transition duration-150 ease-in-out">
                   {name}
                 </a>
               </Link>
@@ -90,7 +90,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
       <div className={`p-2 pb-3 md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         {links.map(({ name, href }) => (
           <Link key={name} href={href}>
-            <a className="block mt-1 px-3 py-2 rounded-md font-medium leading-5 text-ternary hover:text-text hover:bg-secondary focus:outline-none focus:text-text focus:bg-secondary transition duration-150 ease-in-out">
+            <a className="block mt-1 px-3 py-2 rounded-md font-medium leading-5 text-text-offset hover:text-text hover:bg-background focus:outline-none focus:text-text focus:bg-background transition duration-150 ease-in-out">
               {name}
             </a>
           </Link>

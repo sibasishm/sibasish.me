@@ -8,11 +8,13 @@ module.exports = {
       sans: ['Jost var', ...defaultTheme.fontFamily.sans]
     },
     colors: {
-      primary: 'var(--color-primary)',
-      secondary: 'var(--color-secondary)',
-      ternary: 'var(--color-ternary)',
+      background: 'var(--color-background)',
+      'background-offset': 'var(--color-background-offset)',
       text: 'var(--color-text)',
-      hover: 'var(--color-hover)'
+      'text-offset': 'var(--color-text-offset)',
+      border: 'var(--color-border)',
+      primary: 'var(--color-primary)',
+      'primary-offset': 'var(--color-primary-offset)'
     }
   },
   variants: {},
