@@ -1,14 +1,7 @@
 import Link from 'next/link';
 
 const Hero = () => (
-  <div className="mt-10 sm:mt-12 lg:mt-20 xl:mt-32 sm:text-center lg:text-left">
-    <h4 className="text-md sm:text-xl md:text-2xl font-light capitalize tracking-widest">
-      Designer, developer, blogger
-    </h4>
-    <h2 className="mt-3 sm:mt-5 text-3xl tracking-tight leading-10 font-extrabold text-text sm:text-5xl sm:leading-none md:text-6xl whitespace-pre-line">
-      I transform good ideas{`\n`} into
-      <span className="text-primary"> great products.</span>
-    </h2>
+  <>
     <p className="mt-3 text-base text-text-offset sm:mt-5 sm:text-lg sm:max-w-2xl sm:mx-auto md:text-xl lg:mx-0">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque, porro est nostrum
       eum repudiandae, veniam incidunt soluta aut debitis, quis explicabo reiciendis ad velit iusto.
@@ -30,7 +23,7 @@ const Hero = () => (
         </Link>
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default Hero;
