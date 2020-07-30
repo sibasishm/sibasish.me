@@ -31,12 +31,12 @@ const Layout = ({ children, title }) => {
         </main>
         <footer className="bg-primary text-background-offset p-12 px-16 mt-12 text-center">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-screen-xl">
-            <ul className="flex justify-center items-center">
+            <ul className="flex space-x-6 justify-center items-center">
               <li className="text-md font-semibold">Github</li>
-              <li className="text-md font-semibold ml-6">Behance</li>
-              <li className="text-md font-semibold ml-6">Stack Overflow</li>
-              <li className="text-md font-semibold ml-6">Twitter</li>
-              <li className="text-md font-semibold ml-6">RSS</li>
+              <li className="text-md font-semibold">Behance</li>
+              <li className="text-md font-semibold">Stack Overflow</li>
+              <li className="text-md font-semibold">Twitter</li>
+              <li className="text-md font-semibold">RSS</li>
             </ul>
             <p className="text-xl mt-4">Handcrafted by me &copy; 2020</p>
           </div>

@@ -3,7 +3,11 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '3/5': '60%'
+      }
+    },
     fontFamily: {
       sans: ['Jost var', ...defaultTheme.fontFamily.sans]
     },
