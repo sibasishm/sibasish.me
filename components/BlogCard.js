@@ -18,15 +18,7 @@ const BlogCard = () => {
           aperiam a officia facere corporis? Tempore enim sapiente modi esse autem temporibus
           aliquam assumenda, officia iusto repellat porro? Similique vero odit, nobis minus dolore
           tempora doloribus ullam consequatur delectus molestias corrupti perspiciatis, veritatis
-          obcaecati libero ducimus reprehenderit, porro eum necessitatibus. Non est commodi hic eos
-          vero veniam quisquam? Officia corporis atque voluptatibus numquam repellat id, fugiat,
-          possimus rem libero at voluptate sunt enim blanditiis excepturi nam suscipit fuga error?
-          Officiis numquam aut repellendus tempora aliquid quaerat, laborum corporis. Earum,
-          similique? Error quae delectus aperiam quo! Eius distinctio ipsam vel libero quas
-          praesentium, quidem eum sit labore enim sed nulla, voluptatem soluta cum perferendis
-          itaque maxime in pariatur dignissimos? Ipsa aspernatur doloribus velit ut ad numquam.
-          Dolorem aliquam, delectus voluptatem consectetur fuga minima ea in culpa ex corrupti,
-          vero, dolore explicabo voluptates ut et velit veniam minus! Voluptates, dolore!
+          obcaecati libero ducimus reprehenderit.
         </div>
       </div>
     </article>
