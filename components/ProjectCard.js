@@ -3,7 +3,7 @@ import Link from 'next/link';
 const ProjectCard = () => (
   <article className="grid grid-cols-1 xl:grid-cols-12 xl:grid-rows-1 items-center">
     <div className="hidden xl:block col-span-8 col-start-5 row-start-1">
-      <img src="/static/images/dummy.jpg" alt="space and stars" />
+      <img src="/static/images/dummy.jpg" alt="space and stars" className="rounded-lg shadow-md" />
     </div>
     <div className="xl:hidden relative bg-border pb-2/3">
       <img
