@@ -29,16 +29,16 @@ const Layout = ({ children, title }) => {
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-screen-xl">
           {children}
         </main>
-        <footer className="bg-primary text-background-offset p-12 px-16 mt-12 text-center">
+        <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-screen-xl">
-            <ul className="flex space-x-6 justify-center items-center">
-              <li className="text-md font-semibold">Github</li>
-              <li className="text-md font-semibold">Behance</li>
-              <li className="text-md font-semibold">Stack Overflow</li>
-              <li className="text-md font-semibold">Twitter</li>
-              <li className="text-md font-semibold">RSS</li>
+            <ul className="flex space-x-4 justify-center items-center">
+              <li className="text-sm font-semibold">Github</li>
+              <li className="text-sm font-semibold">Behance</li>
+              <li className="text-sm font-semibold">Stack Overflow</li>
+              <li className="text-sm font-semibold">Twitter</li>
+              <li className="text-sm font-semibold">RSS</li>
             </ul>
-            <p className="text-xl mt-4">Handcrafted by me &copy; 2020</p>
+            <p className="text-lg mt-4">Handcrafted by me &copy; 2020</p>
           </div>
         </footer>
       </div>
