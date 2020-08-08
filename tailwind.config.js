@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   purge: {
     mode: 'all',
-    content: ['./src/**/*.{js,mdx}', './next.config.js']
+    content: ['./**/*.{js,mdx}', './next.config.js']
     /*
      * options: {
      *   extractors: [
