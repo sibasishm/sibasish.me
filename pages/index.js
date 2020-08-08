@@ -36,7 +36,7 @@ const Index = () => {
         </div>
         <Link href="/works">
           <a className="lg:float-right px-8 py-3 rounded-md shadow text-base font-medium tracking-wide capitalize text-background bg-primary hover:bg-primary-offset focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
-            Explore more &rarr;
+            Explore all &rarr;
           </a>
         </Link>
       </Section>
@@ -61,7 +61,7 @@ const Index = () => {
         </ul>
         <Link href="/works">
           <a className="lg:float-right px-8 py-3 rounded-md shadow text-base font-medium tracking-wide capitalize text-background bg-primary hover:bg-primary-offset focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
-            Read more &rarr;
+            Read all &rarr;
           </a>
         </Link>
       </Section>

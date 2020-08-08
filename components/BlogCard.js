@@ -13,12 +13,17 @@ const BlogCard = () => {
             <a className="hover:text-primary">A brief introduction of Modern CSS frameworks</a>
           </Link>
         </h2>
-        <div className="text-text-offset">
+        <div className="text-text-offset sm:px-6 md:px-10 lg:px-0">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ea, similique deleniti
           aperiam a officia facere corporis? Tempore enim sapiente modi esse autem temporibus
-          aliquam assumenda, officia iusto repellat porro? Similique vero odit, nobis minus dolore
-          tempora doloribus ullam consequatur delectus molestias corrupti perspiciatis, veritatis
-          obcaecati libero ducimus reprehenderit.
+          aliquam assumenda, officia iusto repellat porro?
+        </div>
+        <div className="text-base leading-6 font-medium">
+          <Link href="/">
+            <a className="text-primary hover:underline" aria-label="Read title">
+              Read more &rarr;
+            </a>
+          </Link>
         </div>
       </div>
     </article>
