@@ -35,7 +35,13 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '2/3': '67%'
+        '2/3': '67%',
+        '72': '18rem',
+        '84': '24rem',
+        '96': '30rem'
+      },
+      maxWidth: {
+        'screen-2xl': '88rem'
       }
     },
     fontFamily: {
