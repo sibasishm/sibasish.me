@@ -26,7 +26,7 @@ const Layout = ({ children, title, noFooter }) => {
         <header className="bg-background-offset border-b-2 border-border sticky top-0 z-10">
           <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         </header>
-        <main className="container">{children}</main>
+        <main>{children}</main>
         {noFooter ? null : (
           <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center">
             <div className="container">

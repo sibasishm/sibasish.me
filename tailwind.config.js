@@ -41,7 +41,7 @@ module.exports = {
         '96': '30rem'
       },
       maxWidth: {
-        'screen-2xl': '88rem'
+        'screen-2xl': '84rem'
       }
     },
     fontFamily: {
