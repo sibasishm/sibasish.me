@@ -25,7 +25,7 @@ const Hero = () => (
         </div>
       </div>
     </div>
-    <div className="mt-3 relative lg:w-2/5 sm:mt-6 lg:-m-40">
+    <div className="mt-3 relative lg:w-2/5 sm:mt-6 lg:-mt-48">
       <img
         className="h-72 w-full object-cover sm:h-84 md:h-96 lg:w-96 lg:absolute lg:inset-y-0 lg:right-0"
         src="/static/images/sibasishm.jpg"

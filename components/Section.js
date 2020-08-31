@@ -1,5 +1,5 @@
 const Section = ({ title, subtitle, children }) => (
-  <section className="container sm:text-center lg:text-left">
+  <section className="container py-8 lg:py-16 sm:text-center lg:text-left lg:-mt-16">
     <h4 className="text-md sm:text-xl md:text-2xl font-light capitalize tracking-widest text-text-offset">
       {subtitle}
     </h4>
