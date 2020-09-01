@@ -40,7 +40,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl">
+    <nav className="container">
       <div className="relative flex justify-between items-center h-16">
         <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
           <button

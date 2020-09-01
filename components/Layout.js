@@ -26,12 +26,10 @@ const Layout = ({ children, title, noFooter }) => {
         <header className="bg-background-offset border-b-2 border-border sticky top-0 z-10">
           <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         </header>
-        <main className="mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl">
-          {children}
-        </main>
+        <main>{children}</main>
         {noFooter ? null : (
           <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center">
-            <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl">
+            <div className="container">
               <ul className="flex space-x-4 justify-center items-center">
                 <li className="text-sm font-semibold">Github</li>
                 <li className="text-sm font-semibold">Behance</li>

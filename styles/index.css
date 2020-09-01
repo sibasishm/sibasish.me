@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  @apply max-w-screen-2xl w-11/12 mx-auto;
+}
+
 .theme-light {
   --color-background: #f6f8fa;
   --color-background-offset: #fffdfb;
