@@ -10,8 +10,6 @@ class InlineStylesHead extends Head {
   }
 
   __getInlineStyles() {
-    if (!this.context._documentProps) return null;
-
     const { assetPrefix, files } = this.context._documentProps;
 
     if (!files || files.length === 0) return null;
