@@ -37,11 +37,8 @@ module.exports = {
       spacing: {
         '2/3': '67%',
         '72': '18rem',
-        '84': '24rem',
+        '84': '26rem',
         '96': '30rem'
-      },
-      maxWidth: {
-        'screen-2xl': '84rem'
       }
     },
     fontFamily: {

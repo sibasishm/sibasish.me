@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const Hero = () => (
-  <div className="flex flex-col-reverse lg:flex-row lg:space-x-8">
+  <div className="flex flex-col-reverse lg:flex-row lg:space-x-4">
     <div>
       <p className="mt-3 text-base text-text-offset sm:mt-5 sm:text-lg sm:max-w-2xl sm:mx-auto md:text-xl lg:mx-0">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque, porro est
@@ -27,7 +27,7 @@ const Hero = () => (
     </div>
     <div className="mt-3 relative lg:w-2/5 sm:mt-6 lg:-mt-48">
       <img
-        className="h-72 w-full object-cover sm:h-84 md:h-96 lg:w-96 lg:absolute lg:inset-y-0 lg:right-0"
+        className="h-72 w-full object-cover sm:h-84 md:h-96 lg:w-84 lg:absolute lg:inset-y-0 lg:right-0"
         src="/static/images/sibasishm.jpg"
         alt="Sibasish Mohanty Smiling"
       />

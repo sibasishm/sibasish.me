@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 
 const DEFAULT_THEME = 'theme-light';
 
-const Layout = ({ children, title, noFooter }) => {
+const Layout = ({ children, title }) => {
   if (typeof window === 'undefined') return null;
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -27,20 +27,18 @@ const Layout = ({ children, title, noFooter }) => {
           <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         </header>
         <main>{children}</main>
-        {noFooter ? null : (
-          <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center">
-            <div className="container">
-              <ul className="flex space-x-4 justify-center items-center">
-                <li className="text-sm font-semibold">Github</li>
-                <li className="text-sm font-semibold">Behance</li>
-                <li className="text-sm font-semibold">Stack Overflow</li>
-                <li className="text-sm font-semibold">Twitter</li>
-                <li className="text-sm font-semibold">RSS</li>
-              </ul>
-              <p className="text-lg mt-4">Handcrafted by me &copy; 2020</p>
-            </div>
-          </footer>
-        )}
+        <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center inset-x-0 bottom-0">
+          <div className="container">
+            <ul className="flex space-x-4 justify-center items-center">
+              <li className="text-sm font-semibold">Github</li>
+              <li className="text-sm font-semibold">Behance</li>
+              <li className="text-sm font-semibold">Stack Overflow</li>
+              <li className="text-sm font-semibold">Twitter</li>
+              <li className="text-sm font-semibold">RSS</li>
+            </ul>
+            <p className="text-lg mt-4">Handcrafted by me &copy; 2020</p>
+          </div>
+        </footer>
       </div>
     </>
   );
