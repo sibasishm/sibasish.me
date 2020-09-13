@@ -20,7 +20,9 @@ const Blog = () => {
         <ul className="divide-y divide-border">
           {posts.map(({ link, module: { default: Component, meta } }) => (
             <li key={link} className="py-12">
-              <BlogCard />
+              <BlogCard date={meta.date} link={link} title={meta.title}>
+                {meta.summary}
+              </BlogCard>
             </li>
           ))}
         </ul>

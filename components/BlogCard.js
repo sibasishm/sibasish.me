@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const BlogCard = ({ date, title, children }) => {
+const BlogCard = ({ link, date, title, children }) => {
   return (
     <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0">
       <dl>
@@ -9,13 +9,13 @@ const BlogCard = ({ date, title, children }) => {
       </dl>
       <div className="space-y-5 xl:col-span-3">
         <h2 className="text-2xl leading-8 font-bold tracking-tight">
-          <Link href={'/'}>
+          <Link href={`/blog/[${link}]`} as="/blog/link">
             <a className="hover:text-primary">{title}</a>
           </Link>
         </h2>
-        <div className="text-text-offset sm:px-6 md:px-10 lg:px-0">{children}</div>
+        <div className="text-text-offset prose max-w-none">{children}</div>
         <div className="text-base leading-6 font-medium">
-          <Link href="/">
+          <Link href={link}>
             <a className="text-primary hover:underline" aria-label={`Read ${title}`}>
               Read more &rarr;
             </a>
