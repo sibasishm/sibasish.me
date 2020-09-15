@@ -6,6 +6,7 @@ import hydrate from 'next-mdx-remote/hydrate';
 import matter from 'gray-matter';
 
 import Layout from '../../components/Layout';
+import Title from '../../components/Title';
 
 const root = process.cwd();
 
@@ -15,8 +16,13 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
   return (
     <>
       <Layout>
-        <h1>{frontMatter.title}</h1>
-        {content}
+        <article>
+          <header>
+            <Title>{frontMatter.title}</Title>
+          </header>
+          <div className="prose">{content}</div>
+          <footer>Links to previous and next article</footer>
+        </article>
       </Layout>
     </>
   );

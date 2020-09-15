@@ -53,8 +53,6 @@
     "tailwindcss": "^1.7.3"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.16",
-    "@next/mdx": "^9.5.3",
     "gray-matter": "^4.0.2",
     "next": "^9.4.4",
     "next-mdx-remote": "^1.0.0",

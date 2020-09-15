@@ -14,13 +14,13 @@ const BlogCard = ({ link, date, title, children }) => {
       </dl>
       <div className="space-y-5 xl:col-span-3">
         <h2 className="text-2xl leading-8 font-bold tracking-tight">
-          <Link href="/blog/[link]" as={`/blog${link}`}>
+          <Link href="/blog/[link]" as={`/blog/${link}`}>
             <a className="hover:text-primary">{title}</a>
           </Link>
         </h2>
         <div className="text-text-offset prose max-w-none">{children}</div>
         <div className="text-base leading-6 font-medium">
-          <Link href="/blog/[link]" as={`/blog${link}`}>
+          <Link href="/blog/[link]" as={`/blog/${link}`}>
             <a className="text-primary hover:underline" aria-label={`Read ${title}`}>
               Read more &rarr;
             </a>
