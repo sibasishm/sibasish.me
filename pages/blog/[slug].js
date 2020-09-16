@@ -19,7 +19,7 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
     <>
       <Layout>
         <article className="divide-y divide-border">
-          <header className="py-6 pb-8">
+          <header className="p-6 pb-8">
             <div className="space-y-2 text-center">
               <dl>
                 <dt className="sr-only">Published on</dt>
@@ -33,7 +33,9 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
             </div>
           </header>
           <section className="container">
-            <div className="prose lg:prose-lg xl:prose-xl max-w-none py-8">{content}</div>
+            <div className="prose lg:prose-lg xl:prose-xl max-w-none p-4 py-8 xl:px-12">
+              {content}
+            </div>
           </section>
         </article>
       </Layout>

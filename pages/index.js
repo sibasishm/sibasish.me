@@ -32,7 +32,7 @@ const Index = () => {
         }
         subtitle="Portfolio"
       >
-        <div className="my-12 grid gap-12 grid-cols-1 md:grid-cols-2">
+        <div className="my-12 grid gap-12 grid-cols-1 md:grid-cols-2 md:px-6 xl:px-10">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
