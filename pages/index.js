@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
-import BlogCard from '../components/BlogCard';
+// import BlogCard from '../components/BlogCard';
 
 const Index = () => {
   return (
@@ -44,7 +44,7 @@ const Index = () => {
           </a>
         </Link>
       </Section>
-      <Section
+      {/* <Section
         title={
           <>
             What's new?{`\n`} My <span className="text-primary">blog and news.</span>
@@ -57,7 +57,7 @@ const Index = () => {
             Read all &rarr;
           </a>
         </Link>
-      </Section>
+      </Section> */}
     </Layout>
   );
 };

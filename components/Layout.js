@@ -22,12 +22,12 @@ const Layout = ({ children, title }) => {
       <Head>
         <title>{title || 'Home'}</title>
       </Head>
-      <div className={`${theme} min-h-screen antialiased font-sans text-text bg-background`}>
+      <div className={`${theme} relative antialiased font-sans text-text bg-background`}>
         <header className="bg-background-offset border-b-2 border-border sticky top-0 z-10">
           <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         </header>
         <main>{children}</main>
-        <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center inset-x-0 bottom-0">
+        <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center">
           <div className="container">
             <ul className="flex space-x-4 justify-center items-center">
               <li className="text-sm font-semibold">Github</li>

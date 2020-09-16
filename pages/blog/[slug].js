@@ -4,11 +4,13 @@ import path from 'path';
 import renderToString from 'next-mdx-remote/render-to-string';
 import hydrate from 'next-mdx-remote/hydrate';
 import matter from 'gray-matter';
+import tinytime from 'tinytime';
 
 import Layout from '../../components/Layout';
 import Title from '../../components/Title';
 
 const root = process.cwd();
+const dateFormat = tinytime('{dddd}, {MMMM} {DD}, {YYYY}');
 
 const BlogPost = ({ mdxSource, frontMatter }) => {
   const content = hydrate(mdxSource);
@@ -16,12 +18,23 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
   return (
     <>
       <Layout>
-        <article>
-          <header>
-            <Title>{frontMatter.title}</Title>
+        <article className="divide-y divide-border">
+          <header className="py-6 pb-8">
+            <div className="space-y-2 text-center">
+              <dl>
+                <dt className="sr-only">Published on</dt>
+                <dd className="text-base md:text-lg leading-6 font-medium text-text-offset">
+                  <time dateTime={frontMatter.date}>
+                    {dateFormat.render(new Date(frontMatter.date))}
+                  </time>
+                </dd>
+              </dl>
+              <Title>{frontMatter.title}</Title>
+            </div>
           </header>
-          <div className="prose">{content}</div>
-          <footer>Links to previous and next article</footer>
+          <section className="container">
+            <div className="prose lg:prose-lg xl:prose-xl max-w-none py-8">{content}</div>
+          </section>
         </article>
       </Layout>
     </>
