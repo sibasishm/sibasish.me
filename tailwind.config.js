@@ -3,45 +3,21 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   purge: {
     mode: 'all',
-    content: ['./**/*.{js,mdx}', './next.config.js']
-    /*
-     * options: {
-     *   extractors: [
-     *     {
-     *       extensions: ['mdx'],
-     *       extractor: (content) => {
-     *         content = mdx.sync(content);
-     */
-
-    /*
-     *         // Capture as liberally as possible, including things like `h-(screen-1.5)`
-     *         const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
-     */
-
-    /*
-     *         // Capture classes within other delimiters like .block(class="w-1/2") in Pug
-     *         const innerMatches =
-     *           content.match(/[^<>"'`\s.(){}[\]#=%]*[^<>"'`\s.(){}[\]#=%:]/g) || [];
-     */
-
-    /*
-     *         return broadMatches.concat(innerMatches);
-     *       }
-     *     }
-     *   ]
-     * }
-     */
+    content: ['./**/*.{js,mdx}', './next.config.js'],
+    options: {
+      whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong']
+    }
   },
   theme: {
     extend: {
       spacing: {
         '2/3': '67%',
         '72': '18rem',
-        '84': '24rem',
+        '84': '26rem',
         '96': '30rem'
       },
-      maxWidth: {
-        'screen-2xl': '84rem'
+      lineHeight: {
+        '14': '3.5rem'
       }
     },
     fontFamily: {
@@ -55,7 +31,20 @@ module.exports = {
       border: 'var(--color-border)',
       primary: 'var(--color-primary)',
       'primary-offset': 'var(--color-primary-offset)'
-    }
+    },
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.text-offset'),
+          'h1, h2, h3, blockquote, code, thead': {
+            color: theme('colors.text')
+          },
+          'strong, a': {
+            color: theme('colors.text-offset')
+          }
+        }
+      }
+    })
   },
   variants: {},
   plugins: [

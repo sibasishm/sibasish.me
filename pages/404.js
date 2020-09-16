@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 
 const Error = () => (
-  <Layout title="Not Found" noFooter>
+  <Layout title="Not Found">
     <Section
       title={
         <>

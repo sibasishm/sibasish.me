@@ -11,6 +11,7 @@ module.exports = {
     'objects/no-object-properties-one-line': 0,
     'node/no-unpublished-require': 0,
     'jsx-a11y/anchor-is-valid': 0,
+    'no-sync': 0,
     camelcase: [
       'error',
       {
