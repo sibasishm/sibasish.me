@@ -17,7 +17,7 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
 
   return (
     <>
-      <Layout>
+      <Layout title={frontMatter.title}>
         <article className="divide-y divide-border">
           <header className="p-6 pb-8">
             <div className="space-y-2 text-center">

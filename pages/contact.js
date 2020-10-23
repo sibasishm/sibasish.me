@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout title="Contact">
       <div className="container min-h-screen">
         <section className="py-4 md:py-8 space-y-2 md:space-y-5 mt-4">
           <h1 className="font-extrabold tracking-tight text-4xl sm:leading-10 md:text-6xl md:leading-14">
