@@ -33,7 +33,14 @@ const Index = ({ blogs, works }) => {
                 height="20"
                 patternUnits="userSpaceOnUse"
               >
-                <rect x="0" y="0" width="3" height="3" className="text-text" fill="currentColor" />
+                <rect
+                  x="0"
+                  y="0"
+                  width="3"
+                  height="3"
+                  className="text-text-offset"
+                  fill="currentColor"
+                />
               </pattern>
             </defs>
             <rect width="350" height="400" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
@@ -90,7 +97,7 @@ const Index = ({ blogs, works }) => {
             </li>
           ))}
         </ul>
-        <Link href="/works">
+        <Link href="/blog">
           <a className="lg:float-right px-8 py-3 rounded-md shadow text-base font-medium tracking-wide capitalize text-background bg-primary hover:bg-primary-offset focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Read all &rarr;
           </a>

@@ -1,6 +1,6 @@
 const ProjectCard = ({ title, link, description }) => (
   <article>
-    <div className="relative bg-border pb-2/3">
+    <div className="relative pb-2/3">
       <img
         src="/static/images/dummy.jpg"
         alt="space and stars"
