@@ -42,7 +42,6 @@ export const getStaticProps = () => {
 
     return {
       slug: fileName.replace(/\.mdx$/u, ''),
-      content,
       frontMatter: matter(content).data
     };
   });
