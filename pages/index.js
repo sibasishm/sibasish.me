@@ -16,7 +16,29 @@ const Index = ({ blogs, works }) => {
   return (
     <Layout>
       <div className="relative flex lg:min-h-screen items-center">
-        <div className="hidden absolute inset-y-0 right-0 lg:block w-1/3 bg-primary" />
+        <div className="hidden absolute inset-y-0 right-0 lg:block w-1/3 bg-primary">
+          <svg
+            className="absolute transform bottom-0 -translate-x-1/2"
+            width="350"
+            height="400"
+            fill="none"
+            viewBox="0 0 350 400"
+          >
+            <defs>
+              <pattern
+                id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect x="0" y="0" width="3" height="3" className="text-text" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="350" height="400" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+          </svg>
+        </div>
         <Section
           title={
             <>
