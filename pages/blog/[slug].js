@@ -17,7 +17,7 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
 
   return (
     <>
-      <Layout>
+      <Layout title={frontMatter.title}>
         <article className="divide-y divide-border">
           <header className="p-6 pb-8">
             <div className="space-y-2 text-center">
@@ -33,9 +33,7 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
             </div>
           </header>
           <section className="container">
-            <div className="prose lg:prose-lg xl:prose-xl max-w-none p-4 py-8 xl:px-12">
-              {content}
-            </div>
+            <div className="prose lg:prose-lg xl:prose-xl mx-auto py-8">{content}</div>
           </section>
         </article>
       </Layout>

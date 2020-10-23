@@ -1,9 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
 import useTheme from '../hooks/useTheme';
 
 import Navbar from './Navbar';
+import Footer from './Footer';
+
+const Wrapper = dynamic(() => import('./Wrapper'));
 
 const DEFAULT_THEME = 'theme-light';
 
@@ -20,26 +24,15 @@ const Layout = ({ children, title }) => {
   return (
     <>
       <Head>
-        <title>{title || 'Home'}</title>
+        <title>{title || 'Home'} | Sibasish Mohanty</title>
       </Head>
-      <div className={`${theme} relative antialiased font-sans text-text bg-background`}>
+      <Wrapper theme={theme}>
         <header className="bg-background-offset border-b-2 border-border sticky top-0 z-10">
           <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         </header>
         <main>{children}</main>
-        <footer className="bg-primary text-background-offset p-12 px-16 mt-24 text-center">
-          <div className="container">
-            <ul className="flex space-x-4 justify-center items-center">
-              <li className="text-sm font-semibold">Github</li>
-              <li className="text-sm font-semibold">Behance</li>
-              <li className="text-sm font-semibold">Stack Overflow</li>
-              <li className="text-sm font-semibold">Twitter</li>
-              <li className="text-sm font-semibold">RSS</li>
-            </ul>
-            <p className="text-lg mt-4">Handcrafted by me &copy; 2020</p>
-          </div>
-        </footer>
-      </div>
+        <Footer />
+      </Wrapper>
     </>
   );
 };

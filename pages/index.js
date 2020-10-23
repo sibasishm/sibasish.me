@@ -16,7 +16,36 @@ const Index = ({ blogs, works }) => {
   return (
     <Layout>
       <div className="relative flex lg:min-h-screen items-center">
-        <div className="hidden absolute inset-y-0 right-0 lg:block w-1/3 bg-primary" />
+        <div className="hidden absolute inset-y-0 right-0 lg:block w-1/3 bg-primary">
+          <svg
+            className="absolute transform bottom-0 -translate-x-1/2"
+            width="350"
+            height="400"
+            fill="none"
+            viewBox="0 0 350 400"
+          >
+            <defs>
+              <pattern
+                id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="3"
+                  height="3"
+                  className="text-text-offset"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect width="350" height="400" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+          </svg>
+        </div>
         <Section
           title={
             <>
@@ -61,14 +90,14 @@ const Index = ({ blogs, works }) => {
       >
         <ul className="divide-y divide-border">
           {blogs.map(({ slug, frontMatter }) => (
-            <li key={slug} className="py-12">
+            <li key={slug} className="py-12 md:px-6 xl:px-10">
               <BlogCard date={frontMatter.date} link={slug} title={frontMatter.title}>
                 {frontMatter.summary}
               </BlogCard>
             </li>
           ))}
         </ul>
-        <Link href="/works">
+        <Link href="/blog">
           <a className="lg:float-right px-8 py-3 rounded-md shadow text-base font-medium tracking-wide capitalize text-background bg-primary hover:bg-primary-offset focus:outline-none focus:shadow-outline transition delay-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Read all &rarr;
           </a>
