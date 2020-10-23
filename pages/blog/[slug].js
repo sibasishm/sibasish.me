@@ -33,9 +33,7 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
             </div>
           </header>
           <section className="container">
-            <div className="prose lg:prose-lg xl:prose-xl max-w-none p-4 py-8 xl:px-12">
-              {content}
-            </div>
+            <div className="prose lg:prose-lg xl:prose-xl mx-auto py-8">{content}</div>
           </section>
         </article>
       </Layout>

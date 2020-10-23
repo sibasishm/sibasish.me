@@ -4,29 +4,26 @@ import path from 'path';
 import matter from 'gray-matter';
 
 import Layout from '../../components/Layout';
-import BlogCard from '../../components/BlogCard';
+import ProjectCard from '../../components/ProjectCard';
 
 const root = process.cwd();
 
-const Blog = ({ posts }) => {
+const Works = ({ projects }) => {
   return (
     <Layout>
       <div className="container">
         <section className="py-4 md:py-8 space-y-2 md:space-y-5 mt-4">
           <h1 className="font-extrabold tracking-tight text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest articles
+            All Projects
           </h1>
           <p className="text-lg leading-7 text-text-offset">
-            All the tip and tricks related to web development and UI design along with latest
-            updates and news about me.
+            A collection of my projects that helped me learn and grow as a developer.
           </p>
         </section>
-        <ul className="divide-y divide-border">
-          {posts.map(({ slug, frontMatter }) => (
-            <li key={slug} className="py-12 md:px-6 xl:px-10">
-              <BlogCard date={frontMatter.date} link={slug} title={frontMatter.title}>
-                {frontMatter.summary}
-              </BlogCard>
+        <ul className="my-12 grid gap-12 grid-cols-1 md:grid-cols-2 md:px-6 xl:px-10">
+          {projects.map(({ slug, frontMatter }) => (
+            <li key={slug}>
+              <ProjectCard {...frontMatter} />
             </li>
           ))}
         </ul>
@@ -36,8 +33,8 @@ const Blog = ({ posts }) => {
 };
 
 export const getStaticProps = () => {
-  const contentRoot = path.join(root, 'content', 'blogs');
-  const posts = fs.readdirSync(contentRoot).map((fileName) => {
+  const contentRoot = path.join(root, 'content', 'works');
+  const projects = fs.readdirSync(contentRoot).map((fileName) => {
     const content = fs.readFileSync(path.join(contentRoot, fileName), 'utf-8');
 
     return {
@@ -46,7 +43,7 @@ export const getStaticProps = () => {
     };
   });
 
-  return { props: { posts } };
+  return { props: { projects } };
 };
 
-export default Blog;
+export default Works;

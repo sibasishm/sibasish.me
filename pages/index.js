@@ -90,7 +90,7 @@ const Index = ({ blogs, works }) => {
       >
         <ul className="divide-y divide-border">
           {blogs.map(({ slug, frontMatter }) => (
-            <li key={slug} className="py-12">
+            <li key={slug} className="py-12 md:px-6 xl:px-10">
               <BlogCard date={frontMatter.date} link={slug} title={frontMatter.title}>
                 {frontMatter.summary}
               </BlogCard>
