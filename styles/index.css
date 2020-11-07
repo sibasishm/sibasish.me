@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-screen-2xl w-11/12 mx-auto;
+  @apply max-w-screen-xl w-11/12 mx-auto;
 }
 
 .theme-light {
