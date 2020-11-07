@@ -27,9 +27,7 @@ const Layout = ({ children, title }) => {
         <title>{title || 'Home'} | Sibasish Mohanty</title>
       </Head>
       <Wrapper theme={theme}>
-        <header className="bg-background-offset border-b-2 border-border sticky top-0 z-10">
-          <Navbar theme={theme} handleThemeChange={handleThemeChange} />
-        </header>
+        <Navbar theme={theme} handleThemeChange={handleThemeChange} />
         <main>{children}</main>
         <Footer />
       </Wrapper>

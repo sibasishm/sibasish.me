@@ -18,6 +18,9 @@ module.exports = {
       },
       lineHeight: {
         '14': '3.5rem'
+      },
+      maxWidth: {
+        'screen-2xl': '88rem'
       }
     },
     fontFamily: {
