@@ -40,7 +40,7 @@ module.exports = {
             color: theme('colors.text')
           },
           'strong, a': {
-            color: theme('colors.text-offset')
+            color: theme('colors.primary-offset')
           }
         }
       }

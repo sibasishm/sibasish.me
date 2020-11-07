@@ -31,7 +31,7 @@ const Navbar = ({ theme, handleThemeChange }) => {
                 className="inline-flex items-center p-2 space-x-2 rounded-md focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
               >
                 <Logo className="h-8 w-8" theme={theme} />
-                <span className="hidden md:block text-lg font-semibold">Sibasish Mohanty</span>
+                <span className="hidden sm:block text-lg font-semibold">Sibasish Mohanty</span>
               </a>
             </Link>
           </div>

@@ -10,21 +10,21 @@
 }
 
 .theme-light {
-  --color-background: #f6f8fa;
-  --color-background-offset: #fffdfb;
+  --color-background: #fcfdfe;
+  --color-background-offset: #f7faf9;
   --color-text: #1b2d45;
-  --color-text-offset: #34445f;
-  --color-border: #d1dae7;
+  --color-text-offset: #373a3c;
+  --color-border: #cdd7e6;
   --color-primary: #374ec7;
   --color-primary-offset: #5671fe;
 }
 
 .theme-dark {
-  --color-background: #102c44;
-  --color-background-offset: #0d2438;
+  --color-background: #1a161a;
+  --color-background-offset: #302b30;
   --color-text: #fefffe;
-  --color-text-offset: #94a1b2;
-  --color-border: #535161;
-  --color-primary: #b5dd29;
-  --color-primary-offset: #daff57;
+  --color-text-offset: #bebebe;
+  --color-border: #413841;
+  --color-primary: #e78bf3;
+  --color-primary-offset: #dc66ec;
 }
