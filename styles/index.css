@@ -16,7 +16,7 @@
   --color-text-offset: #34445f;
   --color-border: #d1dae7;
   --color-primary: #374ec7;
-  --color-primary-offset: #5267d1;
+  --color-primary-offset: #5671fe;
 }
 
 .theme-dark {
@@ -25,6 +25,6 @@
   --color-text: #fefffe;
   --color-text-offset: #94a1b2;
   --color-border: #535161;
-  --color-primary: #badb42;
-  --color-primary-offset: #cbe864;
+  --color-primary: #b5dd29;
+  --color-primary-offset: #daff57;
 }
