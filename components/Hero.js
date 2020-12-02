@@ -32,7 +32,7 @@ const Hero = () => (
         <rect width="350" height="400" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
       </svg>
     </div>
-    <section className="relative container mx-auto pt-20 md:pt-24 lg:pt-48 lg:min-h-screen lg:flex lg:space-x-48">
+    <section className="relative container mx-auto pt-20 md:pt-24 lg:pt-40 lg:min-h-screen lg:flex lg:space-x-40">
       <div className="sm:text-center lg:text-left">
         <h3 className="text-base sm:text-xl md:text-2xl font-light capitalize tracking-widest text-text-offset">
           Designer, developer, blogger
